@@ -7,13 +7,13 @@
     <!-- disable zooming -->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=0">
     <title>Card 1 · Intro to CSS 3D transforms › Examples</title>
-    <link rel="stylesheet" href="./_assets/css/style.css" media="screen">
+    <link rel="stylesheet" href="./css/style.css" media="screen">
     <style media="screen">
     .container {
-        width: 200px;
-        height: 260px;
+        width: 147px;
+        height: 370px;
         position: relative;
-        margin: 0 auto 40px;
+        margin: 20px 10px;
         border: 1px solid #CCC;
         -webkit-perspective: 800px;
         -moz-perspective: 800px;
@@ -60,12 +60,12 @@
     
     #card .front {
         /*background: red;*/
-        background-image: url('./_assets/img/character0.png');
+        background-image: url('./_assets/img/character01.png');
     }
     
     #card .back {
         /*background: blue;*/
-        background-image: url('./_assets/img/character1.png');
+        background-image: url('./_assets/img/character02.png');
         -webkit-transform: rotateY( 180deg);
         -moz-transform: rotateY( 180deg);
         -o-transform: rotateY( 180deg);
@@ -75,20 +75,20 @@
 </head>
 
 <body data-pinterest-extension-installed="cr2.0.5">
-    <h1>Character</h1>
+    <h1>> Character <</h1>
     <section class="container">
         <div id="card">
-            <figure class="front">1</figure>
-            <figure class="back">2</figure>
+            <figure class="front"></figure>
+            <figure class="back"></figure>
         </div>
     </section>
     <section id="options">
         <p>
-            <button id="flip">Flip Card</button>
+            <button id="flip">Flip Character</button>
         </p>
     </section>
-    <script src="./_assets/js/utils.js"></script>
-    <script src="./_assets/js/flip-card.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/flip-card.js"></script>
 </body>
 
 </html>
